@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  api:
+    build: ./server
+    ports:
+      - 3000:3000
+    environment:
+      DB_URL: mongodb://db/heliumwatch
+    volumes:
+      - ./server:/app
+    restart: unless-stopped
+  db:
+    image: mongo:4.0-xenial
+    ports:
+      - 27017:27017
+    volumes:
+      - heliumwatch:/data/db
+    restart: unless-stopped
+
+volumes:
+  heliumwatch:

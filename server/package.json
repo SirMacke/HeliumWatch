@@ -1,0 +1,22 @@
+{
+  "name": "heliumwatch-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -L server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "handlebars": "^4.7.7",
+    "helmet": "^4.2.0",
+    "joi": "^17.3.0",
+    "mongoose": "^5.10.14",
+    "nodemailer": "^6.4.18",
+    "nodemon": "^2.0.12"
+  }
+}
