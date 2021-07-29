@@ -26,7 +26,7 @@ const activitySchema = new mongoose.Schema({
   },
 });
 
-const Activity = mongoose.model('User', activitySchema);
+const Activity = mongoose.model('Activity', activitySchema);
 
 function validateActivity(activity) {
   const schema = Joi.object({
